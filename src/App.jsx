@@ -6,7 +6,7 @@ function App() {
   const [members, setMembers] = useState([]);
   const [name, setName] = useState("");
 
-  const API = "http://localhost:8081/api/v1/members";
+  const API = "https://mysql-nodejs.alwaysdata.net/api/v1/members";
 
   const fetchMembers = async () => {
     const res = await axios.get(API);
